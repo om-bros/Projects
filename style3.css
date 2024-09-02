@@ -91,38 +91,22 @@ main {
 
 /* Mobile styles */
 @media (max-width: 480px) {
-    body {
-        background-image: linear-gradient(to bottom, #f2f2f2, #6483c5); /* gradient background for mobile */
-    }
-
     header h1 {
         font-size: 18px;
     }
 
     .video-container {
         width: 100%;
-        padding: 0; /* remove padding for mobile */
-    }
-
-    .video-container video {
-        height: 200px; /* set fixed height for mobile */
-        object-fit: cover; /* ensure video covers the container */
-    }
-
-    .about-section {
-        padding: 10px; /* reduce padding for mobile */
     }
 
     .about-section p {
         font-size: 14px;
     }
 
-    .question-text {
-        font-size: 18px;
-    }
-
     .next-button {
         padding: 10px 15px;
         font-size: 14px;
     }
+
+    /* Add more mobile-specific styles as needed */
 }
