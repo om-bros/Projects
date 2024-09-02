@@ -1,0 +1,86 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/736x/4f/28/ee/4f28ee118f3d7a5f65798e0aeb828493.jpg');
+  background-size: 150%;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bordered-text {
+  text-shadow: 2px 2px 4px #ffffff80;
+}
+
+.container {
+  width: 300px; 
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+input[type="password"] {
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#error-message {
+  color: #f44336;
+  font-size: 16px; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.animate {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(-10px);
+  }
+  40% {
+      transform: translateX(10px);
+  }
+  60% {
+      transform: translateX(-10px);
+  }
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}

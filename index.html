@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="A brief description of your website">
+</head>
+<body>
+  <div class="container">
+    <h1 class="bordered-text">Name Of Your Love</h1>
+    <input type="password" id="password" placeholder="Write your lover's name">
+    <button id="next-button">Next</button>
+    <p id="error-message" style="display: none;">Incorrect password, please try again.</p>
+  </div>
+  <script>
+    const nextButton = document.getElementById('next-button');
+    const errorMessage = document.getElementById('error-message');
+    var password = document.getElementById("password");
+
+    password.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("next-button").click();
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      const passwordInput = document.getElementById('password').value.toLowerCase();
+      const validPasswords = ['dev', 'aashish', 'ashish'];
+
+      if (validPasswords.includes(passwordInput)) {
+        window.location.href = 'birthday.html';
+      } else {
+        errorMessage.style.display = 'block';
+        errorMessage.classList.add('animate');
+        setTimeout(() => {
+          errorMessage.classList.remove('animate');
+        }, 2000);
+      }
+    });
+  </script>
+</body>
+</html>
